@@ -14,7 +14,7 @@ const handleEliminar= () => {
 <div className="mx-5 my-10 bg-white shadow-md px-5 py-10 rounded-xl">
   
   <p className="font-bold mb-3 text-grey-700 uppercase">
-    Nombre Paciente: {''}
+    Nombre Empleado: {''}
     <span className="font-normal normal-case">{nombre}</span>
   </p>
 
@@ -24,7 +24,7 @@ const handleEliminar= () => {
   </p>
   
   <p className="font-bold mb-3 text-grey-700 uppercase">
-    e-Mail: {''}
+    e-Mail o Datos: {''}
     <span className="font-normal normal-case">{email}</span>
   </p>
   

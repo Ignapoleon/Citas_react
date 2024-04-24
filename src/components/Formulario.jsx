@@ -81,7 +81,7 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente}) => {
 
   return (
     <div className="md:w-1/2 lg:w-2/5 mx-5">
-      <h2 className="font-black text text-3xl text-center">Seguimiento Citas</h2>
+      <h2 className="font-black text text-3xl text-center">Establecer Citas</h2>
 
       <p className="text-xl mt-5 mb-10 text-center">Añadir Citas y {''}
         <span className="text-indigo-600 font-bold">Adminístralas</span>
@@ -109,7 +109,7 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente}) => {
         </div>
 
         <div className="mb-5">
-          <label htmlFor="propietario" className="block text-grey-700 uppercase font-bold">Codigo / Telefono</label>
+          <label htmlFor="propietario" className="block text-grey-700 uppercase font-bold">Código / Teléfono</label>
           <input id="propietario"
             type="text"
             placeholder="Código y/o Teléfono"
@@ -120,10 +120,10 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente}) => {
         </div>
 
         <div className="mb-5">
-          <label htmlFor="email" className="block text-grey-700 uppercase font-bold">e-Mail</label>
+          <label htmlFor="email" className="block text-grey-700 uppercase font-bold">e-Mail / Datos</label>
           <input id="email"
-            type="email"
-            placeholder="e-mail de contacto"
+            type="text"
+            placeholder="e-mail o Datos"
             className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
             value={email}
             onChange={(e) => setEmail(e.target.value)} /> {/* eventlistener */}
