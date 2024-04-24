@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Formulario from "./components/Formulario"
 import Header from "./components/Header"
+import Footer from './components/Footer'
 import ListadoPacientes from "./components/ListadoPacientes"
 
 function App() {
@@ -40,9 +41,12 @@ function App() {
             pacientes={pacientes}
             setPaciente={setPaciente}
             eliminar={eliminar}
-          />
-      </div>
+          />          
+      </div>     
 
+<div className="container mx-auto">
+<Footer />  
+</div>
     </div>
   )
 }

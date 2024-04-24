@@ -81,10 +81,10 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente}) => {
 
   return (
     <div className="md:w-1/2 lg:w-2/5 mx-5">
-      <h2 className="font-black text text-3xl text-center">Seguimiento Pacientes</h2>
+      <h2 className="font-black text text-3xl text-center">Seguimiento Citas</h2>
 
-      <p className="text-lg mt-5 text-center mb-10">Añadir Pacientes y {''}
-        <span className="text-indigo-600 font-bold">Administralos</span>
+      <p className="text-xl mt-5 mb-10 text-center">Añadir Citas y {''}
+        <span className="text-indigo-600 font-bold">Adminístralas</span>
       </p>
 
       <form
@@ -98,10 +98,10 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente}) => {
 
         {/* Bloque formaulario */}
         <div className="mb-5">
-          <label htmlFor="mascota" className="block text-grey-700 uppercase font-bold">Nombre Mascota</label>
+          <label htmlFor="mascota" className="block text-grey-700 uppercase font-bold">Nombre Empleado</label>
           <input id="mascota"
             type="text"
-            placeholder="Nombre de la Mascota"
+            placeholder="ej. Yaiza López"
             className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
             value={nombre}
             onChange={(e) => setNombre(e.target.value)} /> {/* eventlistener */}
@@ -109,10 +109,10 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente}) => {
         </div>
 
         <div className="mb-5">
-          <label htmlFor="propietario" className="block text-grey-700 uppercase font-bold">Nombre Propietario</label>
+          <label htmlFor="propietario" className="block text-grey-700 uppercase font-bold">Codigo / Telefono</label>
           <input id="propietario"
             type="text"
-            placeholder="Nombre del propietario"
+            placeholder="Código y/o Teléfono"
             className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
             value={propietario}
             onChange={(e) => setPropietario(e.target.value)} /> {/* eventlistener */}
@@ -131,7 +131,7 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente}) => {
         </div>
 
         <div className="mb-5">
-          <label htmlFor="alta" className="block text-grey-700 uppercase font-bold">Alta</label>
+          <label htmlFor="alta" className="block text-grey-700 uppercase font-bold">Fecha Cita</label>
           <input id="alta"
             type="date"
             className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
@@ -141,11 +141,11 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente}) => {
         </div>
 
         <div className="mb-5">
-          <label htmlFor="sintomas" className="block text-grey-700 uppercase font-bold">Síntomas</label>
+          <label htmlFor="sintomas" className="block text-grey-700 uppercase font-bold">Observaciones</label>
           <textarea
             id="sintomas"
             className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
-            placeholder="Describe los Síntomas"
+            placeholder="Extras, tipo de pensión, etc."
             value={sintomas}
             onChange={(e) => setSintomas(e.target.value)} /> {/* eventlistener */}
 
@@ -154,7 +154,7 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente}) => {
         <input type="submit"
           className="bg-indigo-600 w-full p-3 text-white uppercase font-bold rounded-xl
            hover:bg-indigo-700 cursor-pointer transition-all"
-          value={paciente.id ? "Editar Paciente" : "Agregar Paciente"}
+          value={paciente.id ? "Editar Cliente" : "Agregar Cita"}
         />
 
       </form>

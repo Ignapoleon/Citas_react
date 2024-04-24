@@ -3,7 +3,7 @@ const Paciente = ({paciente, setPaciente, eliminar }) => {
 const{nombre,propietario,email,alta,sintomas,id}=paciente
 
 const handleEliminar= () => {
-    const respuesta = confirm("Desea Elminar este paciente?")
+    const respuesta = confirm("¿Desea Elminar este huésped?")
     if (respuesta){
       eliminar(id)
     }
@@ -14,12 +14,12 @@ const handleEliminar= () => {
 <div className="mx-5 my-10 bg-white shadow-md px-5 py-10 rounded-xl">
   
   <p className="font-bold mb-3 text-grey-700 uppercase">
-    Nombre: {''}
+    Nombre Paciente: {''}
     <span className="font-normal normal-case">{nombre}</span>
   </p>
 
   <p className="font-bold mb-3 text-grey-700 uppercase">
-    Propietario: {''}
+    Número/Código Empleado: {''}
     <span className="font-normal normal-case">{propietario}</span>
   </p>
   
@@ -29,12 +29,12 @@ const handleEliminar= () => {
   </p>
   
   <p className="font-bold mb-3 text-grey-700 uppercase">
-    Fecha Alta: {''}
+    Fecha Cita: {''}
     <span className="font-normal normal-case">{alta}</span>
   </p>
   
   <p className="font-bold mb-3 text-grey-700 uppercase">
-    Síntomas: {''}
+    Observaciones: {''}
     <span className="font-normal normal-case">{sintomas}</span>
   </p>
 
