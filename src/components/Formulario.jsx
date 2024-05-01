@@ -98,7 +98,7 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente}) => {
 
         {/* Bloque formaulario */}
         <div className="mb-5">
-          <label htmlFor="mascota" className="block text-grey-700 uppercase font-bold">Nombre Empleado</label>
+          <label htmlFor="mascota" className="block text-grey-700 uppercase font-bold">Nombre</label>
           <input id="mascota"
             type="text"
             placeholder="ej. Yaiza López"

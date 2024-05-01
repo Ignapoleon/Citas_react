@@ -14,12 +14,12 @@ const handleEliminar= () => {
 <div className="mx-5 my-10 bg-white shadow-md px-5 py-10 rounded-xl">
   
   <p className="font-bold mb-3 text-grey-700 uppercase">
-    Nombre Empleado: {''}
+    Nombre: {''}
     <span className="font-normal normal-case">{nombre}</span>
   </p>
 
   <p className="font-bold mb-3 text-grey-700 uppercase">
-    Número/Código Empleado: {''}
+    Número/Código: {''}
     <span className="font-normal normal-case">{propietario}</span>
   </p>
   
